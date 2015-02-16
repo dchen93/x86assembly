@@ -1,0 +1,26 @@
+STEP 1:
+=======
+
+To run Microsoft Macro Assembler, type the command:
+
+   ml /c main.asm
+
+This will produce an object file "main.obj".
+
+
+STEP 2:
+=======
+
+To run Microsoft Linker, type the command:
+
+   link /SUBSYSTEM:CONSOLE irvine32.lib kernel32.lib user32.lib main.obj
+
+This will produce an executable program "main.exe".
+
+Step 3:
+=======
+
+To run the prdouced executable program, type the command:
+
+   main
+
